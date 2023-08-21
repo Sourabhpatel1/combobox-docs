@@ -38,4 +38,4 @@
 ```
 
 # Learn More
-[Documentation](https://sourabhpatel1.github.io/combobox-docs/) to learn more about props, events and styling.
+[Documentation](https://sourabhpatel1.github.io/combobox-docs/) to learn more about usage, props, events and styling.
