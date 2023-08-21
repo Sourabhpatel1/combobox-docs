@@ -6,7 +6,7 @@
 
 ```
 <script>
-    import ComboBox from 'svelte-combobox';
+    import ComboBox from 'svelte-combobox/Combobox.svelte';
     let options = [
         { id: 1, name: "Option 1", value: "1" },
         { id: 2, name: "Option 2", value: "2" },
