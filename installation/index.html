@@ -5,22 +5,22 @@
 		<link rel="icon" href="../favicon.png" />
 		<meta name="viewport" content="width=device-width" />
 		
-		<link href="../_app/immutable/assets/0.e5f198b6.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/0.e2e9e62d.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/4.47871ec5.css" rel="stylesheet">
 		<link href="../_app/immutable/assets/monokai.c47a857b.css" rel="stylesheet">
-		<link rel="modulepreload" href="../_app/immutable/entry/start.8bd1354d.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.5612cdb8.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.60a61370.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c578997a.js">
-		<link rel="modulepreload" href="../_app/immutable/entry/app.49b079d5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.7c48b605.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.7dd098d9.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/index.145bfebc.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/0.645129c1.js">
-		<link rel="modulepreload" href="../_app/immutable/chunks/stores.cdba04f5.js">
-		<link rel="modulepreload" href="../_app/immutable/nodes/4.692e7fb9.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.432c5b77.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.49d4e971.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.9ede698a.js">
 		<link rel="modulepreload" href="../_app/immutable/chunks/monokai.e541b38e.js"><!-- HEAD_svelte-g40mhf_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#272822;color:#ddd}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-selector-tag,.hljs-strong,.hljs-tag{color:#f92672}.hljs-code{color:#66d9ef}.hljs-attribute,.hljs-link,.hljs-regexp,.hljs-symbol{color:#bf79db}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-emphasis,.hljs-section,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string,.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-title,.hljs-type,.hljs-variable{color:#a6e22e}.hljs-class .hljs-title,.hljs-title.class_{color:#fff}.hljs-comment,.hljs-deletion,.hljs-meta,.hljs-quote{color:#75715e}.hljs-doctag,.hljs-keyword,.hljs-literal,.hljs-section,.hljs-selector-id,.hljs-selector-tag,.hljs-title,.hljs-type{font-weight:700}</style><!-- HTML_TAG_END --><!-- HEAD_svelte-g40mhf_END -->
 	</head>
 	<body data-sveltekit-preload-data="hover">
 		<div style="display: contents">  <div class="container svelte-12yhwqd"><div class="navigation svelte-12yhwqd"><div class="navigation  svelte-186cpx7"><button class="toggle  svelte-186cpx7" aria-label="toggle-navigation"><span class="line line-1 svelte-186cpx7"></span> <span class="line line-2 svelte-186cpx7"></span> <span class="line line-3 svelte-186cpx7"></span></button> <nav class="sidebar svelte-186cpx7"><div class="logo svelte-186cpx7"><h4><span class="svelte-186cpx7">&lt; </span>SvelteBox <span class="svelte-186cpx7">/></span></h4></div> <div class="links svelte-186cpx7"><ol class="outer-list svelte-186cpx7"><li class="outer-list-item"><a href="/combobox-docs/" class="top-link  svelte-186cpx7">Home</a></li> <li class="outer-list-item"><a href="/combobox-docs/installation" class="top-link active svelte-186cpx7">Installation &amp; Usage</a></li> <li class="outer-list-item"><a href="/combobox-docs/props" class="top-link  svelte-186cpx7">Props</a></li> <li class="outer-list-item"><a href="/combobox-docs/events" class="top-link  svelte-186cpx7">Events</a></li> <li class="outer-list-item"><a href="/combobox-docs/style" class="top-link  svelte-186cpx7">Styling</a></li></ol></div> <div class="theme"><label for="theme-toggle" data-svelte-h="svelte-1jtnju3">Dark Mode</label> <input type="checkbox" id="theme-toggle"></div></nav> </div></div> <div class="page svelte-12yhwqd"> <div class="main svelte-1l6wwqv"><div class="section svelte-1l6wwqv"><h3 class="svelte-1l6wwqv" data-svelte-h="svelte-1ae8k70">Installation</h3> <div class="code"> <pre data-language="svelte" class=" svelte-11sh29b"><code class="hljs"><!-- HTML_TAG_START -->npm <span class="hljs-selector-tag">i</span> svelte-combobox<!-- HTML_TAG_END --></code></pre> </div> <p class="svelte-1l6wwqv" data-svelte-h="svelte-15ud0p7">Run the command in your sveltekit app&#39;s home directory.</p></div> <div class="section svelte-1l6wwqv"><h3 class="svelte-1l6wwqv" data-svelte-h="svelte-1wx6xff">Usage</h3> <div class="code"> <pre data-language="svelte" class=" svelte-11sh29b"><code class="hljs"><!-- HTML_TAG_START --><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
-    <span class="hljs-keyword">import</span> <span class="hljs-title class_">ComboBox</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;svelte-combobox&#x27;</span>;
+    <span class="hljs-keyword">import</span> <span class="hljs-title class_">ComboBox</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;svelte-combobox/Combobox.svelte&#x27;</span>;
     <span class="hljs-keyword">let</span> options = [
         { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 1&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;1&quot;</span> },
         { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 2&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;2&quot;</span> },
@@ -52,7 +52,7 @@
 			
 			<script>
 				{
-					__sveltekit_1bi621o = {
+					__sveltekit_mv5ub6 = {
 						assets: "/combobox-docs",
 						base: new URL("..", location).pathname.slice(0, -1),
 						env: {}
@@ -63,8 +63,8 @@
 					const data = [null,null];
 
 					Promise.all([
-						import("../_app/immutable/entry/start.8bd1354d.js"),
-						import("../_app/immutable/entry/app.49b079d5.js")
+						import("../_app/immutable/entry/start.5612cdb8.js"),
+						import("../_app/immutable/entry/app.7dd098d9.js")
 					]).then(([kit, app]) => {
 						kit.start(app, element, {
 							node_ids: [0, 4],
