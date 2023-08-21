@@ -4,7 +4,7 @@
 
     let codeOnSelect = ` // Usgage of on:select event.
 <script>
-    import ComboBox from 'sveltebox/Combobox.svelte'
+    import ComboBox from 'svelte-combobox/Combobox.svelte'
     const doSomething = (e) => {
         // your custom code here;
         // the value selected can be accessed via e.detail property;
