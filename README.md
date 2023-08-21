@@ -1,38 +1,41 @@
-# create-svelte
+# Installation
 
-Everything you need to build a Svelte project, powered by [`create-svelte`](https://github.com/sveltejs/kit/tree/master/packages/create-svelte).
+ npm i svelte-combobox
 
-## Creating a project
+# Usage
 
-If you're seeing this, you've probably already done this step. Congrats!
+```
+<script>
+    import ComboBox from 'svelte-combobox/Combobox.svelte';
+    let options = [
+        { id: 1, name: "Option 1", value: "1" },
+        { id: 2, name: "Option 2", value: "2" },
+        { id: 3, name: "Option 3", value: "3" },
+        { id: 4, name: "Option 4", value: "4" },
+        { id: 5, name: "Option 5", value: "5" },
+        { id: 6, name: "Option 6", value: "6" },
+        { id: 7, name: "Option 7", value: "7" },
+        { id: 8, name: "Option 8", value: "8" },
+        { id: 9, name: "Option 9", value: "9" },
+        { id: 10, name: "Option 10", value: "10" }
+    ]
+</script>
 
-```bash
-# create a new project in the current directory
-npm create svelte@latest
-
-# create a new project in my-app
-npm create svelte@latest my-app
+<div class="customClass">
+    <ComboBox 
+        placeholder={"Select an option"}
+        options={options} 
+        id={"combobox"} 
+        wrapperClass={"svelte-box"}
+        inputClass={"svelte-box-input"}
+        optionsContainerClass={"svelte-box-options-container"}
+        optionsClass={"svelte-box-options"}
+        defaultSelected={selectedValue}
+        on:select="{(e)=>{selectedOption=e.detail.name; selectedValue=e.detail;}}"
+        on:clear="{()=>{selectedOption="Nothong Yet !"; selectedValue=null}}"
+    />
+</div>
 ```
 
-## Developing
-
-Once you've created a project and installed dependencies with `npm install` (or `pnpm install` or `yarn`), start a development server:
-
-```bash
-npm run dev
-
-# or start the server and open the app in a new browser tab
-npm run dev -- --open
-```
-
-## Building
-
-To create a production version of your app:
-
-```bash
-npm run build
-```
-
-You can preview the production build with `npm run preview`.
-
-> To deploy your app, you may need to install an [adapter](https://kit.svelte.dev/docs/adapters) for your target environment.
+# Learn More
+[Documentation](https://sourabhpatel1.github.io/combobox-docs/) to learn more about usage, props, events and styling.
