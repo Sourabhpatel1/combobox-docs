@@ -43,7 +43,7 @@
         <p class="{copied?'copied':''}">
             Install by running:&nbsp;<code>
                 npm i svelte-combobox 
-                <button class="copy" on:click={copyToClipboard}>
+                <button class="copy" on:click={copyToClipboard} aria-label="copy-install-command">
                     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256"><rect width="256" height="256" fill="none"/><rect x="40" y="72" width="144" height="144" opacity="0.2"/><polyline points="216 184 216 40 72 40" fill="var(--fill-color)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><rect x="40" y="72" width="144" height="144" fill="var(--fill-color)" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>
                 </button>
             </code>
@@ -71,9 +71,9 @@
         <h2 style="text-align: center;">Try It Out !</h2>
         <hr style="width: 50%;">
         <div class="tabs">
-            <button class="{selectedTab === 'component' ? 'active' : ''}" on:click={() => selectedTab = "component"}>Component</button>
-            <button class="{selectedTab === 'markup' ? 'active' : ''}" on:click={() => {selectedTab = "markup"}}>Markup</button>
-            <button class="{selectedTab === 'css' ? 'active' : ''}" on:click={() => {selectedTab = "css"}}>CSS</button>
+            <button class="{selectedTab === 'component' ? 'active' : ''}" on:click={() => selectedTab = "component"} aria-label="select-component-tab">Component</button>
+            <button class="{selectedTab === 'markup' ? 'active' : ''}" on:click={() => {selectedTab = "markup"}} aria-label="select-markup-tab">Markup</button>
+            <button class="{selectedTab === 'css' ? 'active' : ''}" on:click={() => {selectedTab = "css"}} aria-label="select-css-tab">CSS</button>
         </div>
         <div class="tab-content">
             {#if selectedTab === "component"}
@@ -207,7 +207,7 @@
         width: 100%;
         text-align: left;
     }
-
+    
     .example .tab-content .markup,
     .example .tab-content .css {
         max-height: 350px;
@@ -216,11 +216,12 @@
         overflow-y: auto;
     }
     .example .tabs button {
+        font-weight: 700;
         width: 100%;
         transition: .4s ease;
     }
     .example .tabs button.active {
-        color: var(--p-color);
+        color: var(--h-color);
         background: var(--tertiary-color);
     }
     .info {

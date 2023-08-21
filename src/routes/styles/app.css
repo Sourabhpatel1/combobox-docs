@@ -38,7 +38,7 @@ html {
     --button-text-color: #000000;
     --primary-color: #ff8e3c;
     --secondary-color: #ff5470;
-    --tertiary-color: #a00023;
+    --tertiary-color: #ff0037;
     --fill-color: white;
     --bxs-color: rgba(0, 0, 0, 1);
     
@@ -91,7 +91,7 @@ html {
         --button-text-color: #000000;
         --primary-color: #ff8e3c;
         --secondary-color: #ff5470;
-        --tertiary-color: #a00023;
+        --tertiary-color: #ff0037;
         --fill-color: white;
         --bxs-color: rgba(0, 0, 0, 1);
     }
