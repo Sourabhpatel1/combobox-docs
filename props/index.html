@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="../_app/immutable/assets/0.e5f198b6.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/5.1443f7f1.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.8bd1354d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.60a61370.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c578997a.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.49b079d5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.145bfebc.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.645129c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.cdba04f5.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/5.80a14506.js">
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="container svelte-12yhwqd"><div class="navigation svelte-12yhwqd"><div class="navigation  svelte-186cpx7"><button class="toggle  svelte-186cpx7" aria-label="toggle-navigation"><span class="line line-1 svelte-186cpx7"></span> <span class="line line-2 svelte-186cpx7"></span> <span class="line line-3 svelte-186cpx7"></span></button> <nav class="sidebar svelte-186cpx7"><div class="logo svelte-186cpx7"><h4><span class="svelte-186cpx7">&lt; </span>SvelteBox <span class="svelte-186cpx7">/></span></h4></div> <div class="links svelte-186cpx7"><ol class="outer-list svelte-186cpx7"><li class="outer-list-item"><a href="/combobox-docs/" class="top-link  svelte-186cpx7">Home</a></li> <li class="outer-list-item"><a href="/combobox-docs/installation" class="top-link  svelte-186cpx7">Installation &amp; Usage</a></li> <li class="outer-list-item"><a href="/combobox-docs/props" class="top-link active svelte-186cpx7">Props</a></li> <li class="outer-list-item"><a href="/combobox-docs/events" class="top-link  svelte-186cpx7">Events</a></li> <li class="outer-list-item"><a href="/combobox-docs/style" class="top-link  svelte-186cpx7">Styling</a></li></ol></div> <div class="theme"><label for="theme-toggle" data-svelte-h="svelte-1jtnju3">Dark Mode</label> <input type="checkbox" id="theme-toggle"></div></nav> </div></div> <div class="page svelte-12yhwqd"><div class="main svelte-15x5hay"><div class="hero svelte-15x5hay" data-svelte-h="svelte-wy3nw0"><h1>Props</h1></div> <table class="svelte-15x5hay"><thead data-svelte-h="svelte-km1n39"><tr class="svelte-15x5hay"><th class="svelte-15x5hay">Prop</th> <th class="svelte-15x5hay">Type</th> <th class="svelte-15x5hay">Description</th></tr></thead> <tbody><tr class="svelte-15x5hay" data-svelte-h="svelte-3vw61o"><td data-cell="Prop" class="svelte-15x5hay">placeholder</td> <td data-cell="Type" class="svelte-15x5hay">string</td> <td data-cell="Description" class="svelte-15x5hay">Placeholder to be displayed in the search input.</td></tr> <tr class="svelte-15x5hay"><td data-cell="Prop" class="svelte-15x5hay" data-svelte-h="svelte-12o4ghd">options</td> <td data-cell="Type" class="svelte-15x5hay">{id : number, "value" : any, name: string}[]</td> <td data-cell="Description" class="svelte-15x5hay" data-svelte-h="svelte-1xvfhu2">An array of options to be displayed when listbox is open.
+                    <ul class="svelte-15x5hay"><li>id is for keying the options in each loop.</li> <li>value is the items value that you want the user to select and dispatch.</li> <li>name is the name displayed in the listbox inside each options.</li></ul></td></tr> <tr class="svelte-15x5hay"><td data-cell="Prop" class="svelte-15x5hay" data-svelte-h="svelte-1q1w3mr">defaultSelected</td> <td data-cell="Type" class="svelte-15x5hay">{id : number, "value" : any, name: string} | null</td> <td data-cell="Description" class="svelte-15x5hay" data-svelte-h="svelte-qk1nix">option that is selected by default. The option must be present in the options prop.</td></tr> <tr class="svelte-15x5hay" data-svelte-h="svelte-17yr65i"><td data-cell="Prop" class="svelte-15x5hay">id</td> <td data-cell="Type" class="svelte-15x5hay">string</td> <td data-cell="Description" class="svelte-15x5hay">An id that is to be assigned to the container containing the search input and the options listbox.</td></tr> <tr class="svelte-15x5hay" data-svelte-h="svelte-1bipjmt"><td data-cell="Prop" class="svelte-15x5hay">wrapperClass</td> <td data-cell="Type" class="svelte-15x5hay">string</td> <td data-cell="Description" class="svelte-15x5hay">Class to be assigned to the container containing the search input and the options listbox.</td></tr> <tr class="svelte-15x5hay" data-svelte-h="svelte-xngghd"><td data-cell="Prop" class="svelte-15x5hay">inputClass</td> <td data-cell="Type" class="svelte-15x5hay">string</td> <td data-cell="Description" class="svelte-15x5hay">Class to be assigned to the input element inside the container.</td></tr> <tr class="svelte-15x5hay" data-svelte-h="svelte-ly8a27"><td data-cell="Prop" class="svelte-15x5hay">optionsContainerClass</td> <td data-cell="Type" class="svelte-15x5hay">string</td> <td data-cell="Description" class="svelte-15x5hay">Class to be assigned to the div containing the options lits, i.e. the listbox container.</td></tr> <tr class="svelte-15x5hay" data-svelte-h="svelte-nhoej0"><td data-cell="Prop" class="svelte-15x5hay">optionsClass</td> <td data-cell="Type" class="svelte-15x5hay">string</td> <td data-cell="Description" class="svelte-15x5hay">Class to be assigned to the options inside the listbox, i.e. the individual buttons contining the option text.</td></tr></tbody></table> </div></div> </div> 
+			
+			<script>
+				{
+					__sveltekit_1bi621o = {
+						assets: "/combobox-docs",
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.8bd1354d.js"),
+						import("../_app/immutable/entry/app.49b079d5.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 5],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="../_app/immutable/assets/0.e5f198b6.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/4.47871ec5.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/monokai.c47a857b.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.8bd1354d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.60a61370.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c578997a.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.49b079d5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.145bfebc.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.645129c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.cdba04f5.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/4.692e7fb9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/monokai.e541b38e.js"><!-- HEAD_svelte-g40mhf_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#272822;color:#ddd}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-selector-tag,.hljs-strong,.hljs-tag{color:#f92672}.hljs-code{color:#66d9ef}.hljs-attribute,.hljs-link,.hljs-regexp,.hljs-symbol{color:#bf79db}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-emphasis,.hljs-section,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string,.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-title,.hljs-type,.hljs-variable{color:#a6e22e}.hljs-class .hljs-title,.hljs-title.class_{color:#fff}.hljs-comment,.hljs-deletion,.hljs-meta,.hljs-quote{color:#75715e}.hljs-doctag,.hljs-keyword,.hljs-literal,.hljs-section,.hljs-selector-id,.hljs-selector-tag,.hljs-title,.hljs-type{font-weight:700}</style><!-- HTML_TAG_END --><!-- HEAD_svelte-g40mhf_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="container svelte-12yhwqd"><div class="navigation svelte-12yhwqd"><div class="navigation  svelte-186cpx7"><button class="toggle  svelte-186cpx7" aria-label="toggle-navigation"><span class="line line-1 svelte-186cpx7"></span> <span class="line line-2 svelte-186cpx7"></span> <span class="line line-3 svelte-186cpx7"></span></button> <nav class="sidebar svelte-186cpx7"><div class="logo svelte-186cpx7"><h4><span class="svelte-186cpx7">&lt; </span>SvelteBox <span class="svelte-186cpx7">/></span></h4></div> <div class="links svelte-186cpx7"><ol class="outer-list svelte-186cpx7"><li class="outer-list-item"><a href="/combobox-docs/" class="top-link  svelte-186cpx7">Home</a></li> <li class="outer-list-item"><a href="/combobox-docs/installation" class="top-link active svelte-186cpx7">Installation &amp; Usage</a></li> <li class="outer-list-item"><a href="/combobox-docs/props" class="top-link  svelte-186cpx7">Props</a></li> <li class="outer-list-item"><a href="/combobox-docs/events" class="top-link  svelte-186cpx7">Events</a></li> <li class="outer-list-item"><a href="/combobox-docs/style" class="top-link  svelte-186cpx7">Styling</a></li></ol></div> <div class="theme"><label for="theme-toggle" data-svelte-h="svelte-1jtnju3">Dark Mode</label> <input type="checkbox" id="theme-toggle"></div></nav> </div></div> <div class="page svelte-12yhwqd"> <div class="main svelte-1l6wwqv"><div class="section svelte-1l6wwqv"><h3 class="svelte-1l6wwqv" data-svelte-h="svelte-1ae8k70">Installation</h3> <div class="code"> <pre data-language="svelte" class=" svelte-11sh29b"><code class="hljs"><!-- HTML_TAG_START -->npm <span class="hljs-selector-tag">i</span> svelte-combobox<!-- HTML_TAG_END --></code></pre> </div> <p class="svelte-1l6wwqv" data-svelte-h="svelte-15ud0p7">Run the command in your sveltekit app&#39;s home directory.</p></div> <div class="section svelte-1l6wwqv"><h3 class="svelte-1l6wwqv" data-svelte-h="svelte-1wx6xff">Usage</h3> <div class="code"> <pre data-language="svelte" class=" svelte-11sh29b"><code class="hljs"><!-- HTML_TAG_START --><span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+    <span class="hljs-keyword">import</span> <span class="hljs-title class_">ComboBox</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;svelte-combobox&#x27;</span>;
+    <span class="hljs-keyword">let</span> options = [
+        { <span class="hljs-attr">id</span>: <span class="hljs-number">1</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 1&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;1&quot;</span> },
+        { <span class="hljs-attr">id</span>: <span class="hljs-number">2</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 2&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;2&quot;</span> },
+        { <span class="hljs-attr">id</span>: <span class="hljs-number">3</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 3&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;3&quot;</span> },
+        { <span class="hljs-attr">id</span>: <span class="hljs-number">4</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 4&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;4&quot;</span> },
+        { <span class="hljs-attr">id</span>: <span class="hljs-number">5</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 5&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;5&quot;</span> },
+        { <span class="hljs-attr">id</span>: <span class="hljs-number">6</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 6&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;6&quot;</span> },
+        { <span class="hljs-attr">id</span>: <span class="hljs-number">7</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 7&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;7&quot;</span> },
+        { <span class="hljs-attr">id</span>: <span class="hljs-number">8</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 8&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;8&quot;</span> },
+        { <span class="hljs-attr">id</span>: <span class="hljs-number">9</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 9&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;9&quot;</span> },
+        { <span class="hljs-attr">id</span>: <span class="hljs-number">10</span>, <span class="hljs-attr">name</span>: <span class="hljs-string">&quot;Option 10&quot;</span>, <span class="hljs-attr">value</span>: <span class="hljs-string">&quot;10&quot;</span> }
+    ]
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+
+<span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;customClass&quot;</span>&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">ComboBox</span> 
+        <span class="hljs-attr">placeholder</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">Select</span> <span class="hljs-attr">an</span> <span class="hljs-attr">option</span>&quot;}
+        <span class="hljs-attr">options</span>=<span class="hljs-string">{options}</span> 
+        <span class="hljs-attr">id</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">combobox</span>&quot;} 
+        <span class="hljs-attr">wrapperClass</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">svelte-box</span>&quot;}
+        <span class="hljs-attr">inputClass</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">svelte-box-input</span>&quot;}
+        <span class="hljs-attr">optionsContainerClass</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">svelte-box-options-container</span>&quot;}
+        <span class="hljs-attr">optionsClass</span>=<span class="hljs-string">{</span>&quot;<span class="hljs-attr">svelte-box-options</span>&quot;}
+        <span class="hljs-attr">defaultSelected</span>=<span class="hljs-string">{selectedValue}</span>
+        <span class="hljs-attr">on:select</span>=<span class="hljs-string">&quot;{(e)=&gt;{selectedOption=e.detail.name; selectedValue=e.detail;}}&quot;</span>
+        <span class="hljs-attr">on:clear</span>=<span class="hljs-string">&quot;{()=&gt;{selectedOption=&quot;</span><span class="hljs-attr">Nothong</span> <span class="hljs-attr">Yet</span> !&quot;; <span class="hljs-attr">selectedValue</span>=<span class="hljs-string">null}}</span>&quot;
+    /&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span><!-- HTML_TAG_END --></code></pre> </div> <p class="svelte-1l6wwqv" data-svelte-h="svelte-javt8w">A working example of the code is provided in the homepage.</p></div> </div></div> </div> 
+			
+			<script>
+				{
+					__sveltekit_1bi621o = {
+						assets: "/combobox-docs",
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.8bd1354d.js"),
+						import("../_app/immutable/entry/app.49b079d5.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 4],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>

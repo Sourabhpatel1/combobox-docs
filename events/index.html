@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="../_app/immutable/assets/0.e5f198b6.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/3.95711354.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/monokai.c47a857b.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.8bd1354d.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.60a61370.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.c578997a.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.49b079d5.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.145bfebc.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.645129c1.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.cdba04f5.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/3.441322d4.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/monokai.e541b38e.js"><!-- HEAD_svelte-g40mhf_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#272822;color:#ddd}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-selector-tag,.hljs-strong,.hljs-tag{color:#f92672}.hljs-code{color:#66d9ef}.hljs-attribute,.hljs-link,.hljs-regexp,.hljs-symbol{color:#bf79db}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-emphasis,.hljs-section,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string,.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-title,.hljs-type,.hljs-variable{color:#a6e22e}.hljs-class .hljs-title,.hljs-title.class_{color:#fff}.hljs-comment,.hljs-deletion,.hljs-meta,.hljs-quote{color:#75715e}.hljs-doctag,.hljs-keyword,.hljs-literal,.hljs-section,.hljs-selector-id,.hljs-selector-tag,.hljs-title,.hljs-type{font-weight:700}</style><!-- HTML_TAG_END --><!-- HEAD_svelte-g40mhf_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="container svelte-12yhwqd"><div class="navigation svelte-12yhwqd"><div class="navigation  svelte-186cpx7"><button class="toggle  svelte-186cpx7" aria-label="toggle-navigation"><span class="line line-1 svelte-186cpx7"></span> <span class="line line-2 svelte-186cpx7"></span> <span class="line line-3 svelte-186cpx7"></span></button> <nav class="sidebar svelte-186cpx7"><div class="logo svelte-186cpx7"><h4><span class="svelte-186cpx7">&lt; </span>SvelteBox <span class="svelte-186cpx7">/></span></h4></div> <div class="links svelte-186cpx7"><ol class="outer-list svelte-186cpx7"><li class="outer-list-item"><a href="/combobox-docs/" class="top-link  svelte-186cpx7">Home</a></li> <li class="outer-list-item"><a href="/combobox-docs/installation" class="top-link  svelte-186cpx7">Installation &amp; Usage</a></li> <li class="outer-list-item"><a href="/combobox-docs/props" class="top-link  svelte-186cpx7">Props</a></li> <li class="outer-list-item"><a href="/combobox-docs/events" class="top-link active svelte-186cpx7">Events</a></li> <li class="outer-list-item"><a href="/combobox-docs/style" class="top-link  svelte-186cpx7">Styling</a></li></ol></div> <div class="theme"><label for="theme-toggle" data-svelte-h="svelte-1jtnju3">Dark Mode</label> <input type="checkbox" id="theme-toggle"></div></nav> </div></div> <div class="page svelte-12yhwqd"> <div class="main svelte-1phzhat"><div class="hero svelte-1phzhat" data-svelte-h="svelte-b3rgk5"><h1>Events</h1> <hr style="width: 50%; margin-inline:auto"> <div class="event-info svelte-1phzhat"><h2 style="text-align: center;" class="svelte-1phzhat">SvelteBox dispatches two events on user interaction.</h2> <hr style="width: 100%; margin-inline:auto; margin-block: 1rem;"> <ol class="svelte-1phzhat"><li>on:select Event -&gt; Dispatched when user selects an option.</li> <li>on:clear Event -&gt; Dispatched when user clicks on the clear icon when an option is selected.</li></ol></div></div> <div class="event svelte-1phzhat"><h3 class="svelte-1phzhat" data-svelte-h="svelte-1eobk19">on:select Event</h3> <div class="code"> <pre data-language="svelte" class=" svelte-11sh29b"><code class="hljs"><!-- HTML_TAG_START --> // Usgage of on:select event.
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+    <span class="hljs-keyword">import</span> <span class="hljs-title class_">ComboBox</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;sveltebox&#x27;</span>
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">doSomething</span> = (<span class="hljs-params">e</span>) =&gt; {
+        <span class="hljs-comment">// your custom code here;</span>
+        <span class="hljs-comment">// the value selected can be accessed via e.detail property;</span>
+    } 
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ComboBox</span> 
+    //<span class="hljs-attr">props</span> <span class="hljs-attr">here</span>
+    <span class="hljs-attr">on:select</span> = <span class="hljs-string">&quot;{(e)=&gt;{doSomething(e)}}&quot;</span>
+/&gt;</span><!-- HTML_TAG_END --></code></pre>  <p class="svelte-1phzhat" data-svelte-h="svelte-1j75z7x">* the quotes around the function assignment (on:select=&quot;&quot;) are optional and used here for syntax highlighter.</p></div></div> <div class="event svelte-1phzhat"><h3 class="svelte-1phzhat" data-svelte-h="svelte-1pvuu6">on:clear Event</h3> <div class="code"> <pre data-language="svelte" class=" svelte-11sh29b"><code class="hljs"><!-- HTML_TAG_START --> // Usgage of on:clear event.
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+    <span class="hljs-keyword">import</span> <span class="hljs-title class_">ComboBox</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;sveltebox&#x27;</span>
+    <span class="hljs-keyword">const</span> <span class="hljs-title function_">doSomething</span> = (<span class="hljs-params">e</span>) =&gt; {
+        <span class="hljs-comment">// your custom code here;</span>
+        <span class="hljs-comment">// the value of cleared item can be accessed via e.detail property;</span>
+    } 
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ComboBox</span> 
+    // <span class="hljs-attr">props</span> <span class="hljs-attr">here</span>
+    <span class="hljs-attr">on:clear</span>=<span class="hljs-string">&quot;{(e)=&gt;{doSomething(e)}}&quot;</span>
+/&gt;</span><!-- HTML_TAG_END --></code></pre>  <p class="svelte-1phzhat" data-svelte-h="svelte-1bt2bug">* the quotes around the function assignment (on:clear=&quot;&quot;) are optional and used here for syntax highlighter.</p></div></div> </div></div> </div> 
+			
+			<script>
+				{
+					__sveltekit_1bi621o = {
+						assets: "/combobox-docs",
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.8bd1354d.js"),
+						import("../_app/immutable/entry/app.49b079d5.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 3],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
