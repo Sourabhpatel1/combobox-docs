@@ -86,7 +86,7 @@ let codeAfter = ` // Usgage of after slot.
         </div>
     </div>
     <div class="event">
-        <h3>on:clear Event</h3>
+        <h3>Slot after</h3>
         <div class="code">
             <ComboBox 
                 placeholder="Select an option" 
