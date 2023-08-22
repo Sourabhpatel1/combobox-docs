@@ -4,7 +4,8 @@
 
     let codeInstall = `npm i svelte-combobox`
 let codeUsage = `<script>
-    import Combobox from 'svelte-combobox/ComboBox.svelte';
+    import ComboBox from 'svelte-combobox/ComboBox.svelte';
+    
     let options = [
         { id: 1, name: "Option 1", value: "1" },
         { id: 2, name: "Option 2", value: "2" },

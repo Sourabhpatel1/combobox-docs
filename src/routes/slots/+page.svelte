@@ -17,7 +17,7 @@
 
     let codeBefore = ` // Usgage of before slot.
 <script>
-    import Combobox from 'svelte-combobox/ComboBox.svelte';
+    import ComboBox from 'svelte-combobox/ComboBox.svelte';
 <\/script>
 <ComboBox 
    //props here 
@@ -32,7 +32,7 @@
 </ComboBox>`
 let codeAfter = ` // Usgage of after slot.
 <script>
-    import Combobox from 'svelte-combobox/ComboBox.svelte';
+    import ComboBox from 'svelte-combobox/ComboBox.svelte';
 <\/script>
 <ComboBox 
    //props here 

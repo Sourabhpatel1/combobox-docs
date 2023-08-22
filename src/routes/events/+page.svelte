@@ -4,7 +4,8 @@
 
     let codeOnSelect = ` // Usgage of on:select event.
 <script>
-    import Combobox from 'svelte-combobox/ComboBox.svelte';
+    import ComboBox from 'svelte-combobox/ComboBox.svelte';
+    
     const doSomething = (e) => {
         // your custom code here;
         // the value selected can be accessed via e.detail property;
@@ -16,7 +17,8 @@
 />`
 let codeOnClear = ` // Usgage of on:clear event.
 <script>
-    import Combobox from 'svelte-combobox/ComboBox.svelte';
+    import ComboBox from 'svelte-combobox/ComboBox.svelte';
+
     const doSomething = (e) => {
         // your custom code here;
         // the value of cleared item can be accessed via e.detail property;
