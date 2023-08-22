@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" href="../favicon.png" />
+		<meta name="viewport" content="width=device-width" />
+		
+		<link href="../_app/immutable/assets/0.e2e9e62d.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/6.8695c7ea.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/ComboBox.4e4239b6.css" rel="stylesheet">
+		<link href="../_app/immutable/assets/monokai.c47a857b.css" rel="stylesheet">
+		<link rel="modulepreload" href="../_app/immutable/entry/start.bbba9cc3.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/scheduler.81c9387c.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/singletons.cb399be8.js">
+		<link rel="modulepreload" href="../_app/immutable/entry/app.2b689fca.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/index.4cfe47e1.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/0.1aff7cb9.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/stores.abc3dc0a.js">
+		<link rel="modulepreload" href="../_app/immutable/nodes/6.77522008.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/ComboBox.221a0232.js">
+		<link rel="modulepreload" href="../_app/immutable/chunks/monokai.8d0dcd32.js"><title>ComboBox</title><!-- HEAD_svelte-1isofpq_START --><!-- HTML_TAG_START --><style>pre code.hljs{display:block;overflow-x:auto;padding:1em}code.hljs{padding:3px 5px}.hljs{background:#272822;color:#ddd}.hljs-keyword,.hljs-literal,.hljs-name,.hljs-selector-tag,.hljs-strong,.hljs-tag{color:#f92672}.hljs-code{color:#66d9ef}.hljs-attribute,.hljs-link,.hljs-regexp,.hljs-symbol{color:#bf79db}.hljs-addition,.hljs-built_in,.hljs-bullet,.hljs-emphasis,.hljs-section,.hljs-selector-attr,.hljs-selector-pseudo,.hljs-string,.hljs-subst,.hljs-template-tag,.hljs-template-variable,.hljs-title,.hljs-type,.hljs-variable{color:#a6e22e}.hljs-class .hljs-title,.hljs-title.class_{color:#fff}.hljs-comment,.hljs-deletion,.hljs-meta,.hljs-quote{color:#75715e}.hljs-doctag,.hljs-keyword,.hljs-literal,.hljs-section,.hljs-selector-id,.hljs-selector-tag,.hljs-title,.hljs-type{font-weight:700}</style><!-- HTML_TAG_END --><meta name="description" content="A simple combobox for svelte and sveltekit"><!-- HEAD_svelte-1isofpq_END -->
+	</head>
+	<body data-sveltekit-preload-data="hover">
+		<div style="display: contents">  <div class="container svelte-12yhwqd"><div class="navigation svelte-12yhwqd"><div class="navigation  svelte-186cpx7"><button class="toggle  svelte-186cpx7" aria-label="toggle-navigation"><span class="line line-1 svelte-186cpx7"></span> <span class="line line-2 svelte-186cpx7"></span> <span class="line line-3 svelte-186cpx7"></span></button> <nav class="sidebar svelte-186cpx7"><div class="logo svelte-186cpx7"><h4><span class="svelte-186cpx7">&lt; </span>ComboBox <span class="svelte-186cpx7">/></span></h4></div> <div class="links svelte-186cpx7"><ol class="outer-list svelte-186cpx7"><li class="outer-list-item"><a href="/combobox-docs/" class="top-link  svelte-186cpx7">Home</a></li> <li class="outer-list-item"><a href="/combobox-docs/installation" class="top-link  svelte-186cpx7">Installation &amp; Usage</a></li> <li class="outer-list-item"><a href="/combobox-docs/props" class="top-link  svelte-186cpx7">Props</a></li> <li class="outer-list-item"><a href="/combobox-docs/events" class="top-link  svelte-186cpx7">Events</a></li> <li class="outer-list-item"><a href="/combobox-docs/style" class="top-link  svelte-186cpx7">Styling</a></li> <li class="outer-list-item"><a href="/combobox-docs/slots" class="top-link active svelte-186cpx7">Slots</a></li></ol></div> <div class="theme"><label for="theme-toggle" data-svelte-h="svelte-1jtnju3">Dark Mode</label> <input type="checkbox" id="theme-toggle"></div></nav> </div></div> <div class="page svelte-12yhwqd"> <div class="main svelte-11kaq2f"><div class="hero svelte-11kaq2f" data-svelte-h="svelte-1nub8ah"><h1>Slots</h1> <hr style="width: 50%; margin-inline:auto"> <div class="event-info svelte-11kaq2f"><h2 style="text-align: center;" class="svelte-11kaq2f">ComboBox provides two slots for adding addtional elements to perform various actions.</h2> <hr style="width: 100%; margin-inline:auto; margin-block: 1rem;"> <ol class="svelte-11kaq2f"><li>Slot &quot;before&quot; : can be used to add elements before the options in the listbox.</li> <li>Slot &quot;after&quot;  : can be used to add elements after the options in the listbox.</li></ol></div></div> <div class="event svelte-11kaq2f"><h3 class="svelte-11kaq2f" data-svelte-h="svelte-16uqpd7">Slot before</h3> <div class="code"><div class="select-wrapper svelte-box svelte-1380f86" id="combobox"><div class="search-box svelte-1380f86"><input type="text" placeholder="Select an option" class=" svelte-1380f86" role="combobox" name="combobox-input" aria-controls=".options" aria-expanded="false" aria-label="Select an option" aria-autocomplete="list" value=""> <button class="chevron  svelte-1380f86" tabindex="-1" name="chevron" aria-label="Chevron"><svg tabindex="-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);" class="svelte-1380f86"><path d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z" class="svelte-1380f86"></path></svg></button></div> <div class="options closed  svelte-1380f86" tabindex="-1" aria-label="options-container" role="listbox"><button style="width: 100%; margin-inline:auto; position:sticky; top:-.5rem" slot="before" data-svelte-h="svelte-1l34826">Add New</button>  <button id="combobox-option-1" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 1" aria-selected="false">Option 1 </button> <button id="combobox-option-2" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 2" aria-selected="false">Option 2 </button> <button id="combobox-option-3" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 3" aria-selected="false">Option 3 </button> <button id="combobox-option-4" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 4" aria-selected="false">Option 4 </button> <button id="combobox-option-5" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 5" aria-selected="false">Option 5 </button> <button id="combobox-option-6" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 6" aria-selected="false">Option 6 </button> <button id="combobox-option-7" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 7" aria-selected="false">Option 7 </button> <button id="combobox-option-8" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 8" aria-selected="false">Option 8 </button> <button id="combobox-option-9" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 9" aria-selected="false">Option 9 </button> <button id="combobox-option-10" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 10" aria-selected="false">Option 10 </button> </div> </div>  <pre data-language="svelte" class=" svelte-11sh29b"><code class="hljs"><!-- HTML_TAG_START --> // Usgage of before slot.
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+    <span class="hljs-keyword">import</span> <span class="hljs-title class_">Combobox</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;svelte-combobox/ComboBox.svelte&#x27;</span>;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ComboBox</span> 
+   //<span class="hljs-attr">props</span> <span class="hljs-attr">here</span> 
+&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> 
+        <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 100%; margin-inline:auto; position:sticky; top:-.5rem&quot;</span> 
+        <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;before&quot;</span>
+        <span class="hljs-attr">on:click</span>=<span class="hljs-string">{()</span>=&gt;</span>{alert(&quot;You Clicked Add New !!!&quot;)}}
+    &gt;
+        Add New
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ComboBox</span>&gt;</span><!-- HTML_TAG_END --></code></pre> </div></div> <div class="event svelte-11kaq2f"><h3 class="svelte-11kaq2f" data-svelte-h="svelte-1pvuu6">on:clear Event</h3> <div class="code"><div class="select-wrapper svelte-box svelte-1380f86" id="combobox"><div class="search-box svelte-1380f86"><input type="text" placeholder="Select an option" class=" svelte-1380f86" role="combobox" name="combobox-input" aria-controls=".options" aria-expanded="false" aria-label="Select an option" aria-autocomplete="list" value=""> <button class="chevron  svelte-1380f86" tabindex="-1" name="chevron" aria-label="Chevron"><svg tabindex="-1" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" style="fill: rgba(0, 0, 0, 1);" class="svelte-1380f86"><path d="M16.939 7.939 12 12.879l-4.939-4.94-2.122 2.122L12 17.121l7.061-7.06z" class="svelte-1380f86"></path></svg></button></div> <div class="options closed  svelte-1380f86" tabindex="-1" aria-label="options-container" role="listbox">  <button id="combobox-option-1" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 1" aria-selected="false">Option 1 </button> <button id="combobox-option-2" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 2" aria-selected="false">Option 2 </button> <button id="combobox-option-3" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 3" aria-selected="false">Option 3 </button> <button id="combobox-option-4" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 4" aria-selected="false">Option 4 </button> <button id="combobox-option-5" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 5" aria-selected="false">Option 5 </button> <button id="combobox-option-6" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 6" aria-selected="false">Option 6 </button> <button id="combobox-option-7" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 7" aria-selected="false">Option 7 </button> <button id="combobox-option-8" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 8" aria-selected="false">Option 8 </button> <button id="combobox-option-9" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 9" aria-selected="false">Option 9 </button> <button id="combobox-option-10" tabindex="-1" class="  svelte-1380f86" role="option" aria-label="Option 10" aria-selected="false">Option 10 </button> <button style="width: 100%; margin-inline:auto; position:sticky; bottom: -.5rem;" slot="after" data-svelte-h="svelte-tzyyhv">Add New</button></div> </div>  <pre data-language="svelte" class=" svelte-11sh29b"><code class="hljs"><!-- HTML_TAG_START --> // Usgage of after slot.
+<span class="hljs-tag">&lt;<span class="hljs-name">script</span>&gt;</span><span class="language-javascript">
+    <span class="hljs-keyword">import</span> <span class="hljs-title class_">Combobox</span> <span class="hljs-keyword">from</span> <span class="hljs-string">&#x27;svelte-combobox/ComboBox.svelte&#x27;</span>;
+</span><span class="hljs-tag">&lt;/<span class="hljs-name">script</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-name">ComboBox</span> 
+   //<span class="hljs-attr">props</span> <span class="hljs-attr">here</span> 
+&gt;</span>
+    <span class="hljs-tag">&lt;<span class="hljs-name">button</span> 
+        <span class="hljs-attr">style</span>=<span class="hljs-string">&quot;width: 100%; margin-inline:auto; position:sticky; bottom:-.5rem&quot;</span> 
+        <span class="hljs-attr">slot</span>=<span class="hljs-string">&quot;after&quot;</span>
+        <span class="hljs-attr">on:click</span>=<span class="hljs-string">{()</span>=&gt;</span>{alert(&quot;You Clicked Add New !!!&quot;)}}
+    &gt;
+        Add New
+    <span class="hljs-tag">&lt;/<span class="hljs-name">button</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-name">ComboBox</span>&gt;</span><!-- HTML_TAG_END --></code></pre> </div></div> </div></div> </div> 
+			
+			<script>
+				{
+					__sveltekit_12kgzhx = {
+						assets: "/combobox-docs",
+						base: new URL("..", location).pathname.slice(0, -1),
+						env: {}
+					};
+
+					const element = document.currentScript.parentElement;
+
+					const data = [null,null];
+
+					Promise.all([
+						import("../_app/immutable/entry/start.bbba9cc3.js"),
+						import("../_app/immutable/entry/app.2b689fca.js")
+					]).then(([kit, app]) => {
+						kit.start(app, element, {
+							node_ids: [0, 6],
+							data,
+							form: null,
+							error: null
+						});
+					});
+				}
+			</script>
+		</div>
+	</body>
+</html>
