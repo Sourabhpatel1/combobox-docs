@@ -246,7 +246,8 @@
         bind:this={focusContainer} 
         use:trapFocus={trapFocushandler}
         on:focusin={()=>{ariaActivedescendant=document.activeElement?.id}}
-    >
+    >   
+        <slot name="before"></slot>
         {#each searchableOptions as option (option.id)}
             <!-- svelte-ignore a11y-role-supports-aria-props -->
             <button 
@@ -262,7 +263,7 @@
                 {option.name}
             </button>
         {/each}
-        <slot name="actions"></slot>
+        <slot name="after"></slot>
     </div>
 </div>
 

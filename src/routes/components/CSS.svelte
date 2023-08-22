@@ -1,6 +1,7 @@
 <script lang="ts">
     import Highlight from "svelte-highlight";
     import css from "svelte-highlight/languages/css";
+	import { monokai } from "svelte-highlight/styles";
 
     const code = `.svelte-box {
     --search-bg-color : var(--bg-color) !important;
@@ -18,6 +19,10 @@
 }
 `
 </script>
+
+<svelte:head>
+    {@html monokai}
+</svelte:head>
 
 <div class="code">
     <Highlight language={css} code={code} />

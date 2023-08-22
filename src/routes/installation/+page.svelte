@@ -4,7 +4,7 @@
 
     let codeInstall = `npm i svelte-combobox`
 let codeUsage = `<script>
-    import ComboBox from 'svelte-combobox/Combobox.svelte';
+    import Combobox from 'svelte-combobox/ComboBox.svelte';
     let options = [
         { id: 1, name: "Option 1", value: "1" },
         { id: 2, name: "Option 2", value: "2" },
@@ -37,7 +37,10 @@ let codeUsage = `<script>
 
 <svelte:head>
     {@html monokai}
+    <title>ComboBox</title>
+    <meta name="description" content="A simple combobox for svelte and sveltekit">
 </svelte:head>
+
 
 <div class="main">
     <div class="section">

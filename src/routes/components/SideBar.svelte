@@ -31,7 +31,7 @@
     </button>
     <nav class="sidebar">
         <div class="logo">
-            <h4><span>{"<"} </span>SvelteBox <span>{"/>"}</span></h4>
+            <h4><span>{"<"} </span>ComboBox <span>{"/>"}</span></h4>
         </div>
         <div class="links">
             <ol class="outer-list">
@@ -49,6 +49,9 @@
                 </li>
                 <li class="outer-list-item">
                     <a href="{base}/style" class="top-link {$page.route.id === "/style"?'active':''}">Styling</a>
+                </li>
+                <li class="outer-list-item">
+                    <a href="{base}/slots" class="top-link {$page.route.id === "/slots"?'active':''}">Slots</a>
                 </li>
             </ol>
         </div>

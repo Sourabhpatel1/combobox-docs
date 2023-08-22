@@ -2,6 +2,9 @@
     import ComboBox from "./components/ComboBox.svelte";
     import MarkUp from "./components/MarkUp.svelte";
     import CSS from "./components/CSS.svelte";
+	import { Highlight } from "svelte-highlight";
+    import { json } from "svelte-highlight/languages";
+	import { monokai } from "svelte-highlight/styles";
 
     let copied = false;
     let options = [
@@ -20,6 +23,12 @@
     let selectedOption: string;
     let selectedValue: {id:number, name:string, value:any} | null;
 
+    let tsCode = `{
+    compilerOptions : {
+        //other options
+        "moduleResolution" : "Bundler"  
+    } 
+}`
 
     const copyToClipboard = () => {
         navigator.clipboard.writeText('npm install svelte-box')
@@ -32,13 +41,14 @@
 </script>
 
 <svelte:head>
-    <title>SvelteBox</title>
+    <title>ComboBox</title>
     <meta name="description" content="A simple combobox for svelte and sveltekit">
+    {@html monokai}
 </svelte:head>
 
 <div class="main">
     <div class="hero">
-        <h1><span>{"<"}</span> SvelteBox <span>{"/>"}</span></h1>
+        <h1><span>{"<"}</span> ComboBox <span>{"/>"}</span></h1>
         <p>A simple combobox to be used in your Svelte / Svelte-kit projects.</p>
         <p class="{copied?'copied':''}">
             Install by running:&nbsp;<code>
@@ -50,7 +60,7 @@
         </p>
     </div>
     <div class="info">
-        <h2 style="text-align: center;">SvelteBox Features</h2>
+        <h2 style="text-align: center;">ComboBox Features</h2>
         <hr style="width: 50%;">
         <ul>
             <li>
@@ -103,6 +113,14 @@
             {/if}
         </div>
     </div>
+    <div class="troubleshoot">
+        <h2 style="text-align: center;">Troubleshooting Typescript !!!</h2>
+        <hr style="width: 50%;">
+        <div class="guide">
+            <p style="margin-bottom: 3rem;">If you are getting the following error "Cannot find module 'svelte-combobox/ComboBox.svelte' or its corresponding type declarations" after importing the component then you need to modify you tsconfig.json as follows :</p>
+            <Highlight language={json} code={tsCode}/>
+        </div>
+    </div>
 </div>
 
 <style>
@@ -112,6 +130,7 @@
     }
     .hero {
         width: 100%;
+        min-height: 200px;
         text-align: center;
         display: flex;
         flex-direction: column;
@@ -224,7 +243,8 @@
         color: var(--h-color);
         background: var(--tertiary-color);
     }
-    .info {
+    .info,
+    .troubleshoot {
         width: 100%;
         height: 300px;
         margin-top: 2rem;
@@ -238,7 +258,8 @@
         border-radius: var(--br-small);
     }
     .hero,
-    .info {
+    .info,
+    .troubleshoot {
         height: 450px;
         box-shadow: var(--bxs) var(--bxs-color);
     }
@@ -246,7 +267,8 @@
         height: 500px;
     }
     .example h2,
-    .info h2 {
+    .info h2,
+    .troubleshoot h2 {
         width: 100%;
         padding-bottom: 1rem;
     }
@@ -274,6 +296,13 @@
     }
     .info ul li a {
         color: var(--p-color) !important;
+    }
+    .troubleshoot {
+        margin-top: 2rem;
+    }
+    .troubleshoot .guide {
+        width: 100%;
+        height: 100%;
     }
     @media screen and (max-width: 950px) {
         .hero h1 {
@@ -308,6 +337,9 @@
         .info ul li,
         .info ul li p {
             height: 100%;
+        }
+        .guide p {
+            margin-bottom: 1rem !important;
         }
     }
 </style>

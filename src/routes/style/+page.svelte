@@ -43,7 +43,10 @@
             AddTableARIA();
     })
 </script>
-
+<svelte:head>
+    <title>ComboBox</title>
+    <meta name="description" content="A simple combobox for svelte and sveltekit">
+</svelte:head>
 <div class="main">
     <div class="hero">
         <h1>CSS Variables</h1>

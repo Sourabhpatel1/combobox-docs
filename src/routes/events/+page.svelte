@@ -4,7 +4,7 @@
 
     let codeOnSelect = ` // Usgage of on:select event.
 <script>
-    import ComboBox from 'svelte-combobox/Combobox.svelte'
+    import Combobox from 'svelte-combobox/ComboBox.svelte';
     const doSomething = (e) => {
         // your custom code here;
         // the value selected can be accessed via e.detail property;
@@ -16,7 +16,7 @@
 />`
 let codeOnClear = ` // Usgage of on:clear event.
 <script>
-    import ComboBox from 'sveltebox'
+    import Combobox from 'svelte-combobox/ComboBox.svelte';
     const doSomething = (e) => {
         // your custom code here;
         // the value of cleared item can be accessed via e.detail property;
@@ -30,14 +30,15 @@ let codeOnClear = ` // Usgage of on:clear event.
 
 <svelte:head>
     {@html monokai}
+    <title>ComboBox</title>
+    <meta name="description" content="A simple combobox for svelte and sveltekit">
 </svelte:head>
-
 <div class="main">
     <div class="hero">
         <h1>Events</h1>
         <hr style="width: 50%; margin-inline:auto">
         <div class="event-info">
-            <h2 style="text-align: center;">SvelteBox dispatches two events on user interaction.</h2>
+            <h2 style="text-align: center;">ComboBox dispatches two events on user interaction.</h2>
             <hr style="width: 100%; margin-inline:auto; margin-block: 1rem;">
             <ol>
                 <li>on:select Event -> Dispatched when user selects an option.</li>
