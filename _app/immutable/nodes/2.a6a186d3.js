@@ -50,4 +50,4 @@ import{s as Te,z as kt,A as Ct,B as Ot,C as Et,D as dt,E as yt,b as Tt,F as Ke,G
         //other options
         "moduleResolution" : "Bundler"  
     } 
-}`,()=>{navigator.clipboard.writeText("npm install svelte-box"),s(0,i=!0),setTimeout(()=>{s(0,i=!1)},2e3)},()=>s(1,t="component"),()=>{s(1,t="markup")},()=>{s(1,t="css")},h=>{s(2,n=h.detail.name),s(3,r=h.detail)},()=>{s(2,n="Nothong Yet !"),s(3,r=null)}]}class ll extends $e{constructor(e){super(),Se(this,e,Qt,Wt,Te,{})}}export{ll as component};
+}`,()=>{navigator.clipboard.writeText("npm install svelte-combobox"),s(0,i=!0),setTimeout(()=>{s(0,i=!1)},2e3)},()=>s(1,t="component"),()=>{s(1,t="markup")},()=>{s(1,t="css")},h=>{s(2,n=h.detail.name),s(3,r=h.detail)},()=>{s(2,n="Nothong Yet !"),s(3,r=null)}]}class ll extends $e{constructor(e){super(),Se(this,e,Qt,Wt,Te,{})}}export{ll as component};
