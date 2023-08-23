@@ -31,7 +31,7 @@
 }`
 
     const copyToClipboard = () => {
-        navigator.clipboard.writeText('npm install svelte-box')
+        navigator.clipboard.writeText('npm install svelte-combobox')
         copied = true;
         setTimeout(()=>{
             copied = false;
