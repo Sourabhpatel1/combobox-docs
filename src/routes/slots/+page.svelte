@@ -15,7 +15,7 @@
         { id: 10, name: "Option 10", value: "10" }
     ]
 
-    let codeBefore = ` // Usgage of before slot.
+    let codeBefore = ` // Usage of before slot.
 <script>
     import ComboBox from 'svelte-combobox/ComboBox.svelte';
 <\/script>
@@ -30,7 +30,7 @@
         Add New
     </button>
 </ComboBox>`
-let codeAfter = ` // Usgage of after slot.
+let codeAfter = ` // Usage of after slot.
 <script>
     import ComboBox from 'svelte-combobox/ComboBox.svelte';
 <\/script>

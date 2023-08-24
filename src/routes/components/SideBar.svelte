@@ -1,4 +1,4 @@
-<script>
+<script lang="ts">
 	import { browser } from "$app/environment";
 	import { onMount } from "svelte";
     import { page } from "$app/stores";
@@ -8,18 +8,27 @@
     let darkMode = false;
 
     onMount(() => {
-        if (browser) {
-            darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches;
+        if (document.cookie.length > 0) {
+            let setTheme:boolean = JSON.parse(document.cookie.split("=")[1])
+            darkMode = setTheme
+            document.querySelector(":root")?.setAttribute('data-theme', darkMode?'dark':'light')
+        } else {
+            darkMode = window.matchMedia("(prefers-color-scheme: dark)").matches
+            console.log(darkMode)
+            document.querySelector(":root")?.setAttribute('data-theme', darkMode?'dark':'light')
         }
+        
         document.querySelectorAll('a').forEach(element => {
             element.addEventListener('click', ()=>{
                 navExpanded = false;
             })
         });
+    
     });
 
     const changeTheme = () => {
-        darkMode?document.querySelector(':root')?.setAttribute('data-theme', 'dark'):document.querySelector(':root')?.setAttribute('data-theme', 'light');
+        document.querySelector(":root")?.setAttribute('data-theme', darkMode?"dark":"light")
+        document.cookie = `darkTheme=${darkMode}`
     }
 </script>
 
